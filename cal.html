@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jester Calculator</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="cal.js" defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header id="navbar">
+  <nav class="navbar">
+     <div class="logo"><span>Jester</span> Calculator</div>
+    <ul>
+      <li><a href="project.html">Home</a></li>
+      <li><a href="about.html">Knowledge</a></li>
+      <li><a href="cal.html">Calculator</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Calculator Section -->
+<section class="calculator">
+  <div class="card">
+    <h1>คำนวณค่าไฟ</h1>
+
+    <div class="form-group">
+      <label>กำลังไฟ (วัตต์)</label>
+      <input type="number" id="watts" placeholder="เช่น 1000">
+    </div>
+
+    <div class="form-group">
+      <label>จำนวนเครื่อง</label>
+      <input type="number" id="quantity" placeholder="เช่น 2">
+    </div>
+
+    <div class="form-group">
+      <label>ระยะเวลา (ชั่วโมง)</label>
+      <input type="number" id="hours" placeholder="เช่น 5">
+    </div>
+
+    <button onclick="calculatePrice()">คำนวณ</button>
+
+    <h3 id="result">ผลลัพธ์จะแสดงที่นี่</h3>
+  </div>
+</section>
+
+</body>
+</html>

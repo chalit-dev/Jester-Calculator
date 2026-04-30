@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    background-color: #373376;
+    display: flex;
+    justify-content:space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #2b1c61;
+    border-radius: 5px;
+}
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* โลโก้ */
+/* โลโก้ */
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px; /* 👈 เพิ่มระยะห่างด้านซ้าย */
+}
+
+/* สีคำว่า Jester */
+.logo span {
+    color: #f7e8a4; /* 👈 เหลืองพาสเทล */
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("ele.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Content */
+.content {
+    max-width: 600px;
+}
+
+.content h2 {
+    font-size: 30px;
+    color: #e7e3e3;
+    text-shadow: 0 4px 2px #4d4c4c;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.btn a {
+    padding: 20px 25px;
+    background-color: #373376;
+    border: none;
+    border-radius: 40px;
+    width: 20%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.btn a:hover {
+    background-color: #aaa2c8;
+}
+
+/*cal page*/
+/* Section background */
+.calculator {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), /* 👈 overlay ทำให้ตัวหนังสือเด่น */
+        url("image.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    width: 420px; /* 👈 ใหญ่ขึ้น */
+    
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+/* hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
+.card h1 {
+    color: #373376;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Form */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Input */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+/* focus effect */
+.form-group input:focus {
+    border-color: #373376;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 51, 118, 0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+
+    background: linear-gradient(135deg, #373376, #5a54c4);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* button hover */
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(55, 51, 118, 0.4);
+}
+
+/* Result */
+#result {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #373376;
+    font-weight: bold;
+}
+/*knowledge*/
+/* Section */
+.info {
+    padding: 50px 20px;
+    background-color: #f4f6ff;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Headings */
+h1 {
+    color: #373376;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #2b1c61;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #373376;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Example Box */
+.example {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #373376;
+    border-radius: 8px;
+}
+
+/*contact*/
+/* Section */
+/* Section */
+.team {
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Card */
+.member-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* hover */
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image */
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Info */
+.info h2 {
+    margin: 0;
+    color: #373376;
+}
+
+.role {
+    color: #777;
+    margin: 5px 0 10px;
+}
+
+/* text */
+.info p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.contact h1{
+    font-size: 60px;
+}
+.contact-page h1 {
+    text-align: center;
+    color: #373376;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* เส้นใต้ */
+.contact-page h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #373376;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
